@@ -15,7 +15,11 @@ Check the documentation at [styled-components.com/docs](https://www.styled-compo
 
 ## Important
 
-Based on <font color=#0e59d8>750px</font> design draft. And we suposse `100px = 1rem`. So `750px` would be `7.5rem`.
+Based on <font color=#0e59d8>750px</font> design draft. 
+
+We suposse `100px = 1rem` when screen width is `750px`, so `750px` would be `7.5rem`.
+
+When the screen width is `375px`, like iPhone 6, the `font-size` in `html` tag should be `50px`, still, `7.5rem` would be `375px`, which equals to the screen width.
 
 ## Inspriation
 
@@ -98,15 +102,15 @@ export default Box = styled.div`
 
 ## Example
 
-![](docs/images/code.png)
+![code example](docs/images/code.png)
 
 Output
 
-![](docs/images/output.png)
+![output example](docs/images/output.png)
 
 Screenshot
 
-![](docs/images/screenshot.gif)
+![screenshot](docs/images/screenshot.gif)
 
 ## License
 
@@ -114,8 +118,8 @@ Licensed under the MIT License, Copyright © 2019-present win-winFE, [https://gi
 
 See [LICENSE](./LICENSE) for more information.
 
-### 说明
+### Notes
 
-本项目出自[win-winFE团队](https://github.com/win-winFE)，如有任何疑问，请扫下面二维码加入我们的微信群
+This project is presented by [win-winFE Team](https://github.com/win-winFE). Please feel free to concat us if you have any questions. The following is our Wechat group QR-code.
 
 <img src="https://github.com/win-winFE/dms/blob/master/qrcode.png?raw=true" width="240px" height="240px" />
