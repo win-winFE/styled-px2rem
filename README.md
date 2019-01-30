@@ -15,7 +15,7 @@ Check the documentation at [styled-components.com/docs](https://www.styled-compo
 
 ## Important
 
-Based on <font color=#0e59d8>750px</font> design draft.
+Based on <font color=#0e59d8>750px</font> design draft. And we suposse `100px = 1rem`. So `750px` would be `7.5rem`.
 
 ## Inspriation
 
