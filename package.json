@@ -1,6 +1,6 @@
 {
     "name": "styled-px2rem",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Extension of styled-components with features for convert px to rem units",
     "main": "lib/index.js",
     "module": "es/index.js",
