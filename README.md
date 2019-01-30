@@ -6,20 +6,35 @@ Check the documentation at [styled-components.com/docs](https://www.styled-compo
 
 ## Contents
 
-- [Important](#important)
+- [Use Caution](#use-caution)
 - [Inspiration](#inspiration)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Example](#example)
 
-## Important
-
-Based on <font color=#0e59d8>750px</font> design draft. 
+## Use Caution
 
 We suposse `100px = 1rem` when screen width is `750px`, so `750px` would be `7.5rem`.
 
 When the screen width is `375px`, like iPhone 6, the `font-size` in `html` tag should be `50px`, still, `7.5rem` would be `375px`, which equals to the screen width.
+
+So in case you need to hack it, here is what you need to do: 
+
+1. install `styled-components` module. This is required!
+
+1. copy [index.js](index.js) to your project as a third-party module.
+
+1. Tweak the number in the function `px2rem`.
+
+    For example, supposing we take `750px` as `10rem`, just change the function into 
+
+    ```diff
+    - const px2rem => Number(px) ? `${Math.round(Number(px) / 100 * 100000) / 100000}rem` : 0;
+    + const px2rem => Number(px) ? `${Math.round(Number(px) / 75 * 100000) / 100000}rem` : 0;
+    ```
+
+1. Use it in the same way as written below.
 
 ## Inspriation
 
