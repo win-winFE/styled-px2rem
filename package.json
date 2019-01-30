@@ -1,0 +1,61 @@
+{
+    "name": "styled-px2rem",
+    "version": "1.0.0",
+    "description": "Extension of styled-components with features for convert px to rem units",
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "typings": "index.d.ts",
+    "scripts": {
+        "build": "NODE_ENV=production rollup -c",
+        "watch": "rollup -c -w",
+        "pub": "NODE_ENV=production rollup -c && npm publish"
+    },
+    "keywords": [
+        "react",
+        "css-in-js",
+        "styled-components",
+        "px2rem",
+        "px-to-rem",
+        "styled-px2rem",
+        "css",
+        "frontend"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/win-winFE/styled-px2rem.git"
+    },
+    "authors": [
+        {
+            "name": "AkatQuas",
+            "url": "https://github.com/AkatQuas"
+        }
+    ],
+    "license": "MIT",
+    "files": [
+        "dist",
+        "lib",
+        "es",
+        "index.d.ts"
+    ],
+    "dependencies": {
+        "styled-components": "^4.1.3"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-proposal-object-rest-spread": "^7.3.1",
+        "@babel/preset-env": "^7.3.1",
+        "@types/styled-components": "^4.1.6",
+        "babel-eslint": "^10.0.1",
+        "babel-plugin-transform-remove-console": "^6.9.4",
+        "eslint": "^5.12.1",
+        "eslint-plugin-babel": "^5.3.0",
+        "eslint-plugin-import": "^2.15.0",
+        "rollup": "^1.1.2",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-commonjs": "^9.2.0",
+        "rollup-plugin-eslint": "^5.0.0",
+        "rollup-plugin-node-resolve": "^4.0.0",
+        "rollup-plugin-uglify": "^6.0.1"
+    }
+}
