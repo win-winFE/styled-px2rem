@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 const pxRe = /-?\d*[.\d]*px/g;
 const base64Re = /^data:\w+\/[a-zA-Z+\-.]+;base64,/i
 
@@ -23,7 +24,11 @@ const convertInterpolationPx2rem = interpolation => {
 
         interpolation.rules = interpolation.rules.map(convertStringPx2rem);
         return interpolation;
-    } else if (typeof interpolation !== 'function') return interpolation;
+    } else if (Object.prototype.toString.call(interpolation) === '[object Array]') {
+        return convertStringPx2rem(interpolation.join(''))
+    } else if (typeof interpolation !== 'function') {
+        return interpolation;
+    }
 
     return props => {
         const result = interpolation(props);
@@ -71,7 +76,7 @@ const styledPx2rem = ((styled) => {
 })(styled);
 
 export default styledPx2rem;
-export { px2rem };
+export {px2rem};
 
 
 export * from 'styled-components';
